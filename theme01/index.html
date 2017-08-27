@@ -14,13 +14,58 @@
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" id="viewport"></meta>
     <meta content="index, follow" name="ROBOTS">
     <!-- General style -->
-    
-
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,800&amp;subset=vietnamese" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap-3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="vendor/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 
 <body>
     <!-- Begin .header-->
-    <header class="header"></header> 
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="img/logo.svg" alt="">
+            </div>
+            <nav class="navbar">
+                <ul class="nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="actions">
+                <a href="#" class="btn btn-login">Login</a>
+                <a href="#" class="btn btn-login">Sign Up</a>
+            </div>
+        </div>
+    </header> 
+    <div class="hero-banner">
+        <div class="hero-cover"></div>
+        <div class="hero-bg">
+            <div class="wave"></div>
+            <div class="wave"></div>
+        </div>
+        <div class="hero-content">
+            <div class="container">
+                <h1 class="title">Easy business banking</h1>
+                <p class="description">The banking alternative for entrepreneursfreelancersagile teamsSMEs</p>
+                <div class="actions">
+                    <a href="#" class="btn btn-signup">Sign Up</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-img">
+            <div class="device-laptop"  data-parallax="{'y': -80, 'smoothness': 10}">
+                <img src="img/device-laptop.png" alt="">
+            </div>
+            <div class="device-phone" data-parallax='{"y": -30, "smoothness": 40}'>
+                <img src="img/device-phone.png" alt="">
+            </div>
+        </div>
+    </div>
     <!-- End .header-->
     <!-- Begin .main-wrap-->
     <div class="main-wrap">
@@ -30,6 +75,10 @@
     <!-- Begin .footer-->
     <footer class="footer"></footer>
     <!-- End .footer-->
+    <script type="text/javascript" src="vendor/jquery/jquery.2.1.1.min.js"></script>
+
+    <script type="text/javascript" src="vendor/jquery-parallax/jquery.data-parallax.min.js"></script>
+
 </body>
 
 </html>

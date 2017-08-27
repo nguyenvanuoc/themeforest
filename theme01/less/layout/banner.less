@@ -1,0 +1,86 @@
+.hero-banner{
+	background-image: linear-gradient(to right, #5040b2 0%, #7a69e6 100%);
+	.relative;
+	.hero-content{
+		padding: 120px 0px;
+		.center;
+		color: #fff;
+		.title{
+			.f32;
+			margin-bottom: 10px;
+		}
+		.description{
+			.f16;
+
+		}
+		.actions{
+			margin-top: 30px;
+		}
+		.btn{
+			.inline;
+			padding: 10px 40px;
+			.corner(3px);
+			background: @btn;
+			color: #fff;
+			.bold;
+
+			&:hover{
+				background: #fff;
+				color: @btn;
+			}
+
+		}
+	}
+	.hero-bg{
+		.absolute;
+		.fullw;
+		bottom: 0px;
+		height: 198px;
+		.wave{
+			background: url(../../img/wave.svg) repeat-x;
+			.absolute;
+			top: 0px;
+			width: 6400px;
+			height: 198px;
+			animation: wave 15s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
+  			transform: translate3d(0, 0, 0);
+		}
+		.wave:nth-of-type(2) {
+		  top: 20px;
+		  animation: wave 15s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 15s ease -1.25s infinite;
+		  opacity: 1;
+		}
+	}
+	.hero-img{
+		.center;
+		max-width: 991px;
+		margin:0px auto;
+		top: 0px;
+		.relative;
+		z-index: 10;
+		padding-right: 100px;
+		.device-phone{
+			.absolute;
+			bottom: 0px;
+			right: 0px;			
+		}
+	}
+}
+
+@keyframes wave {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -1600px;
+  }
+}
+
+@keyframes swell {
+  0%, 100% {
+    transform: translate3d(0,-25px,0);
+  }
+  50% {
+    transform: translate3d(0,5px,0);
+  }
+}
