@@ -19,28 +19,51 @@
     <link rel="stylesheet" type="text/css" href="vendor/bootstrap-3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="vendor/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="vendor/ap8/css/ap8.css">
+    <link rel="stylesheet" type="text/css" href="vendor/animate/animate.min.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 
 <body>
+    <div class="common-overlay" onclick="LP.expandMenu('close',this);"></div>
+
     <!-- Begin .header-->
     <header class="header">
         <div class="container">
             <div class="logo">
                 <img src="img/logo.svg" alt="">
             </div>
-            <nav class="navbar">
-                <ul class="nav">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#">Pricing</a></li>
-                    <li><a href="#">Product</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
-            </nav>
-            <div class="actions">
-                <a href="#" class="btn btn-login">Login</a>
-                <a href="#" class="btn btn-login">Sign Up</a>
+            <div class="box-menus">
+                <nav class="navbar">
+                    <ul class="nav">
+                        <li class="menu-item active">
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="menu-item"><a href="#">Pricing</a></li>
+
+                        <li class="menu-item sub">
+                            <a href="#"  type="button" data-toggle="dropdown">Product <span class="caret"></span></button></a>
+
+                            <ul class="dropdown-menu animated bounceIn">
+                                <li><a href="#">My Album</a></li>
+                                <li><a href="#">My Collection</a></li>
+                                <li><a href="#">Product list</a></li>
+                                <li><a href="#">Product Sidebar</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item"><a href="#">Blog</a></li>
+                        <li class="menu-item"><a href="#">Contact Us</a></li>
+                    </ul>
+                </nav>
+
+                <div class="actions">
+                    <a href="#" class="btn btn-login">Login</a>
+                    <a href="#" class="btn btn-login">Sign Up</a>
+                </div>
+            </div>
+            <div class="nav-toggle" onclick="LP.expandMenu('open',this);" >
+                <span class="bar first"></span>
+                <span class="bar mid"></span>
+                <span class="bar last"></span>
             </div>
         </div>
     </header> 
@@ -332,8 +355,7 @@
     </footer>
     <!-- End .footer-->
     <script type="text/javascript" src="vendor/jquery/jquery.2.1.1.min.js"></script>
-    <script type="text/javascript" src="vendor/jquery-parallax/jquery.requestAnimationFrame.min.js"></script>
-    <script type="text/javascript" src="vendor/jquery-parallax/jquery.data-parallax.min.js"></script>
+    <script type="text/javascript" src="vendor/bootstrap-3.3.7/js/bootstrap.min.js"></script>
     
 </body>
 
